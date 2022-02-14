@@ -1,0 +1,158 @@
+* {
+  font-family: serif;
+}
+
+body {
+  background-color: #477057;
+  margin: 10px;
+}
+
+.container-left {
+  width: 350px;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+
+.img-1 {
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 #d3eb1e;
+  width: 40%;
+  height: 40%;
+  position: relative;
+  color: white;
+  text-align: 0 0 50px green;
+  font-size: 5em;
+  -webkit-filter: drop-shadow(6px 6px 7px #bacf1d);
+  filter: drop-shadow(6px 1px 7px #bacf1d);
+}
+
+.img-1:hover,
+.img-l:active {
+  transition: ease-out 0.5s;
+  font-size: 50em;
+  -webkit-filter: drop-shadow(12px 12px 7px #13e305);
+  filter: drop-shadow(20px 1px 7px #13e305);
+}
+
+.dropdown-menu:hover,
+.dropdown-menu:active {
+  background-color: #477057;
+  transition: ease-out 0.5s;
+}
+
+.navbar {
+  background-color: #477057;
+}
+
+.nav-item {
+  background-color: #477057;
+  color: white;
+  transition: ease-out 0.3s;
+  width: auto;
+  text-align: center;
+}
+
+.navbar-nav {
+  transition: all 0.5s;
+}
+
+.nav-item:hover, .nav-item:active {
+  box-shadow: inset 130px 0 0 0 #d3eb1e;
+  width: auto;
+}
+
+.dropdown-menu {
+  opacity: 0.95;
+}
+
+button {
+  background-color: #477057;
+}
+
+.block {
+  position: relative;
+  margin: 2% auto 0;
+  width: auto;
+  height: auto;
+  background: linear-gradient(0deg, black, rgb(64, 66, 65));
+  z-index: -3
+}
+
+.glow::before, .glow::after {
+  padding-top: 0px;
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(45deg, rgb(34, 139, 34), yellow, rgb(0, 100, 0), rgb(46, 139, 87), rgb(60, 179, 113), rgb(85, 107, 47));
+  background-size: 400%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.carousel-item {
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 0;
+  }
+
+  50% {
+    background-position: 500% 0;
+  }
+
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+.image-3 {
+  width: 30%;
+  height: 30%;
+}
+
+.icon-1 {
+  z-index: -2;
+  position: relative;
+  background-image: url('valkyrie3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-center {
+  color: white;
+}
+
+.VideoBG {
+  position: fixed;
+  z-index: -5;
+}
+
+@media(max-aspect-ratio: 16/9) {
+  #VideoBG {
+    width: cover;
+    height: auto;
+  }
+}
+
+@media(min-aspect-ratio: 16/9) {
+  #VideoBG {
+    width: cover;
+    height: auto;
+  }
+}
